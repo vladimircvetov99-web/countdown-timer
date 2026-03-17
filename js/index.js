@@ -27,3 +27,12 @@ const startTimer = () => {
     }
 }
 
+// Пауза таймера 
+const pauseTimer = () => {
+   if (isRunning) {
+    clearInterval(intervalid);
+    elapsedTime = Date.now() -  startTime;
+    isRunning = false;
+   } 
+}
+
