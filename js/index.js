@@ -44,3 +44,8 @@ elapsedTime = 0;
 isRunning = false;
 timerDisplay.textContent = "00:00:00"; 
 }
+
+// Обработчик событий для кнопок 
+startButton.addEventListener('click',startTimer);
+pauseButton.addEventListener('click',pauseTimer);
+resetButton.addEventListener('click',resetTimer);
