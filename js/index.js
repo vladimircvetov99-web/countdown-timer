@@ -36,3 +36,11 @@ const pauseTimer = () => {
    } 
 }
 
+// Сброс таймера 
+const resetTimer = () => {
+clearInterval(intervalid);
+startTime = null;
+elapsedTime = 0;
+isRunning = false;
+timerDisplay.textContent = "00:00:00"; 
+}
